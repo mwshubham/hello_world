@@ -19,6 +19,14 @@ class Circle implements Shape {
   num get area => pi * pow(radius, 2);
 }
 
+class CicleMock implements Circle {
+  @override
+  num get area => pi * pow(radius, 2);
+
+  @override
+  num get radius => 4;
+}
+
 class Square implements Shape {
   final num side;
 
